@@ -24,6 +24,21 @@ class BootStrap {
 				with all aspects of hardware with the inclusion of software too''',
 				tutor: 'Martin Cooper').save()
 
+	def student1= new Student(name: 'Keith Andrews',
+				email: 'KeithAnd@gmail.com',
+				studentid: 'KEI123',
+				course: course3).save()
+
+	def student2= new Student(name: 'Andy King',
+				email: 'AndyKing@gmail.com',
+				studentid: 'AND123',
+				course: course2).save()
+	
+	def student3= new Student(name: 'Thomas Jeffcock',
+				email: 'TomCock@gmail.com',
+				studentid: 'TOM123',
+				course: course1).save()
+
 	def librarian1= new Librarian( name: 'Sandra Bullock',
 					email: 'SandraB@gmail.com',
 					userName: 'SanBull',
@@ -41,6 +56,8 @@ class BootStrap {
 					userName: 'DavidM',
 					password: 'password2',
 					telephone: '0114098765').save()
+
+	
 
 	def library1= new Library( location: 'Sheffield',
 				openingHours: '7am',
@@ -81,21 +98,9 @@ class BootStrap {
 				returnDate: new Date('29/08/2016'),
 				student: 'Keith Andrews').save()
 					
-	def student1= new Student(name: 'Keith Andrews',
-				email: 'KeithAnd@gmail.com',
-				studentid: 'KEI123',
-				course: 'Computing').save()
-
-	def student2= new Student(name: 'Andy King',
-				email: 'AndyKing@gmail.com',
-				studentid: 'AND123',
-				course: 'Web Systems Design').save()
-	
-	def student3= new Student(name: 'Thomas Jeffcock',
-				email: 'TomCock@gmail.com',
-				studentid: 'TOM123',
-				course: 'English Language').save()
-			
+		library1.addToLibrarians(librarian1)
+		library2.addToLibrarians(librarian2)
+		library3.addToLibrarians(librarian3)	
     }
     def destroy = {
     }
