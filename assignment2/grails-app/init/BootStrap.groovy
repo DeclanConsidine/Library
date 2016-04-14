@@ -57,27 +57,7 @@ class BootStrap {
 					password: 'password2',
 					telephone: '0114098765').save()
 
-	
-
-	def library1= new Library( location: 'Sheffield',
-				openingHours: '7am',
-				book: 'Horror',
-				student: 'Keith Andrews',
-				librarian: 'Sandra Bullock').save()	
-	
-	def library2= new Library( location: 'Leicester',
-				openingHours: '8am',
-				book: 'Romance',
-				student: 'Andy King',
-				librarian: 'Romelu Lukaku').save()
-	
-	def library3= new Library( location: 'Nottingham',
-				openingHours: '9am',
-				book: 'Sci-Fi',
-				student: 'Thomas Jeffcock',
-				librarian: 'David Mitchell').save()
-	
-	def book1= new Book( title: 'Destructor',
+def book1= new Book( title: 'Destructor',
 				author: 'Declan Considine',
 				isbn: '13',
 				dateBorrowed: new Date('19/01/2016'),
@@ -97,10 +77,37 @@ class BootStrap {
 				dateBorrowed: new Date('29/04/2016'),
 				returnDate: new Date('29/08/2016'),
 				student: 'Keith Andrews').save()
+
+	
+
+	def library1= new Library( location: 'Sheffield',
+				openingHours: '7am').save()	
+	
+	def library2= new Library( location: 'Leicester',
+				openingHours: '8am').save()
+	
+	def library3= new Library( location: 'Nottingham',
+				openingHours: '9am').save()
+	
+	
 					
 		library1.addToLibrarians(librarian1)
 		library2.addToLibrarians(librarian2)
-		library3.addToLibrarians(librarian3)	
+		library3.addToLibrarians(librarian3)
+		
+		library1.addToBooks(book1)
+		library2.addToBooks(book2)
+		library3.addToBooks(book3)
+		
+		library1.addToStudents(student3)
+		library2.addToStudents(student2)
+		library3.addToStudents(student1)
+
+		student1.addToBooks(book3)
+		student2.addToBooks(book2)
+		student3.addToBooks(book1)
+		
+		
     }
     def destroy = {
     }
