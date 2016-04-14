@@ -34,7 +34,7 @@ class BootStrap {
 					email: 'Romelu@gmail.com',
 					userName: 'Romelu',
 					password: 'Romelu',
-					telephone: 0114534321'.save()
+					telephone: '0114534321').save()
 	
 	def librarian3= new Librarian( name: 'David Mitchell',
 					email: 'DavidM@gmail.com',
@@ -60,38 +60,38 @@ class BootStrap {
 				student: 'Thomas Jeffcock',
 				librarian: 'David Mitchell').save()
 	
-	def book1= new book( title: 'Destructor',
+	def book1= new Book( title: 'Destructor',
 				author: 'Declan Considine',
 				isbn: '13',
 				dateBorrowed: new Date('19/01/2016'),
 				returnDate: new Date('19/06/2016'),
 				student: 'Thomas Jeffcock').save()
 	
-	def book2= new book( title: 'The Princess Meets Vardy',
+	def book2= new Book( title: 'The Princess Meets Vardy',
 				author: 'Connor Woolley',
 				isbn: '14',
 				dateBorrowed: new Date('23/03/2016'),
 				returnDate: new Date('23/07/2016'),
 				student: 'Andy King').save()
 	
-	def book3= new book(title: 'It Came From France',
+	def book3= new Book(title: 'It Came From France',
 				author: 'Reece Cope',
 				isbn: '15',
 				dateBorrowed: new Date('29/04/2016'),
 				returnDate: new Date('29/08/2016'),
 				student: 'Keith Andrews').save()
 					
-	def student1= new student(name: 'Keith Andrews',
+	def student1= new Student(name: 'Keith Andrews',
 				email: 'KeithAnd@gmail.com',
 				studentid: 'KEI123',
 				course: 'Computing').save()
 
-	def student2= new student(name: 'Andy King',
+	def student2= new Student(name: 'Andy King',
 				email: 'AndyKing@gmail.com',
 				studentid: 'AND123',
 				course: 'Web Systems Design').save()
 	
-	def student3= new student(name: 'Thomas Jeffcock',
+	def student3= new Student(name: 'Thomas Jeffcock',
 				email: 'TomCock@gmail.com',
 				studentid: 'TOM123',
 				course: 'English Language').save()
