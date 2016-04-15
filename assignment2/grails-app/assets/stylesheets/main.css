@@ -34,7 +34,7 @@ html * {
 
 body {
     background: #ffffff;
-    color: #333333;
+    color: #000000;
     margin: 0 auto;
     max-width: 960px;
     overflow-x: hidden; /* prevents box-shadow causing a horizontal scrollbar in firefox when viewport < 960px wide */
@@ -44,11 +44,11 @@ body {
 }
 
 #grailsLogo {
-    background-color: #abbf78;
+    background-color: #cc3300;
 }
 
 a:link, a:visited, a:hover {
-    color: #48802c;
+    color: #000000;
 }
 
 a:hover, a:active {
@@ -56,7 +56,7 @@ a:hover, a:active {
 }
 
 h1 {
-    color: #48802c;
+    color: #FFFFFF;
     font-weight: normal;
     font-size: 1.25em;
     margin: 0.8em 0 0.3em 0;
@@ -91,7 +91,7 @@ img {
 }
 
 .footer {
-    background: #abbf78;
+    background: #cc3300;
     color: #000;
     clear: both;
     font-size: 0.8em;
@@ -101,7 +101,7 @@ img {
 }
 
 .footer a {
-    color: #255b17;
+    color: #ffffff;
 }
 
 .spinner {
@@ -266,7 +266,7 @@ input:focus, select:focus, textarea:focus {
 }
 
 .required-indicator {
-    color: #48802C;
+    color: #FFFFFF;
     display: inline-block;
     font-weight: bold;
     margin-left: 0.3em;
